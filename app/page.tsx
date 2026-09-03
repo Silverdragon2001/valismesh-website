@@ -19,7 +19,7 @@ export default function Home() {
   return (
     <main>
       <header className="site-header">
-        <a className="brand" href="#top" aria-label="ValisMesh home"><img src="/brand/ValisMesh-Horizontal-Outlined.svg" alt="ValisMesh" /></a>
+        <a className="brand" href="#top" aria-label="ValisMesh home"><img src="/brand/approved-valismesh-horizontal.png" alt="ValisMesh" /></a>
         <nav aria-label="Primary navigation">
           <a href="#what">What is ValisMesh</a><a href="#how">How it works</a><a href="#workforce">AI workforce</a><a href="#governance">Governance</a><a href="#about">About</a>
         </nav>
@@ -34,7 +34,7 @@ export default function Home() {
           <div className="hero-actions"><a className="button button-primary" href="#what">Learn about ValisMesh</a><a className="button button-secondary" href="mailto:contact@valismesh.com">Contact ValisMesh</a></div>
           <p className="development-note"><span /> Currently under active development and preparing toward future pilot deployments.</p>
         </div>
-        <div className="hero-visual" aria-label="ValisMesh logo"><div className="visual-grid" /><img src="/brand/ValisMesh-V-Color.svg" alt="" /><div className="visual-caption"><span>Specialized workers</span><span>Governed collaboration</span><span>Human oversight</span></div></div>
+        <div className="hero-visual" aria-label="ValisMesh logo"><div className="visual-grid" /><img src="/brand/approved-valismesh-v.png" alt="" /><div className="visual-caption"><span>Specialized workers</span><span>Governed collaboration</span><span>Human oversight</span></div></div>
       </section>
 
       <section className="intro section" id="what">
@@ -63,12 +63,12 @@ export default function Home() {
       </section>
 
       <section className="section about" id="about">
-        <div className="about-mark"><img src="/brand/ValisMesh-Primary-Outlined.svg" alt="" /></div>
+        <div className="about-mark"><img src="/brand/approved-valismesh-stacked.png" alt="" /></div>
         <div><p className="section-label">About ValisMesh LLC</p><h2>A Georgia technology company building a more governable way to deploy AI workforces.</h2><p>ValisMesh LLC is developing ValisMesh, a governed multi-agent AI workforce platform. The company is currently focused on product development and preparation toward future pilot deployments.</p></div>
       </section>
 
       <section className="contact section" id="contact"><p className="section-label">Start a conversation</p><h2>Interested in the future of governed AI operations?</h2><p>We welcome conversations with prospective pilot companies, business owners, and potential partners.</p><a className="email-link" href="mailto:contact@valismesh.com">contact@valismesh.com <span>↗</span></a></section>
-      <footer><img src="/brand/ValisMesh-Full-Lockup-Outlined.svg" alt="ValisMesh — AI workforce. Business execution. Governed." /><p>© 2026 ValisMesh LLC. All rights reserved.</p><p>Georgia, United States</p></footer>
+      <footer><img src="/brand/approved-valismesh-full-lockup.png" alt="ValisMesh — AI workforce. Business execution. Governed." /><p>© 2026 ValisMesh LLC. All rights reserved.</p><p>Georgia, United States</p></footer>
     </main>
   );
 }
