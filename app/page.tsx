@@ -31,7 +31,7 @@ export default function Home() {
           <p className="eyebrow"><span /> Built for governed execution</p>
           <h1>Governed AI workforces for real business operations.</h1>
           <p className="hero-text">ValisMesh is developing a platform for deploying specialized AI teams that can perform operational work within or alongside human teams—with permissions, oversight, and accountability built in.</p>
-          <div className="hero-actions"><a className="button button-primary" href="#what">Learn about ValisMesh</a><a className="button button-secondary" href="mailto:evandyke@valismesh.com">Contact ValisMesh</a></div>
+          <div className="hero-actions"><a className="button button-primary" href="#what">Learn about ValisMesh</a><a className="button button-secondary" href="mailto:contact@valismesh.com">Contact ValisMesh</a></div>
           <p className="development-note"><span /> Currently under active development and preparing toward future pilot deployments.</p>
         </div>
         <div className="hero-visual" aria-label="ValisMesh logo"><div className="visual-grid" /><img src="/brand/ValisMesh-V-Color.svg" alt="" /><div className="visual-caption"><span>Specialized workers</span><span>Governed collaboration</span><span>Human oversight</span></div></div>
@@ -67,7 +67,7 @@ export default function Home() {
         <div><p className="section-label">About ValisMesh LLC</p><h2>A Georgia technology company building a more governable way to deploy AI workforces.</h2><p>ValisMesh LLC is developing ValisMesh, a governed multi-agent AI workforce platform. The company is currently focused on product development and preparation toward future pilot deployments.</p></div>
       </section>
 
-      <section className="contact section" id="contact"><p className="section-label">Start a conversation</p><h2>Interested in the future of governed AI operations?</h2><p>We welcome conversations with prospective pilot companies, business owners, and potential partners.</p><a className="email-link" href="mailto:evandyke@valismesh.com">evandyke@valismesh.com <span>↗</span></a></section>
+      <section className="contact section" id="contact"><p className="section-label">Start a conversation</p><h2>Interested in the future of governed AI operations?</h2><p>We welcome conversations with prospective pilot companies, business owners, and potential partners.</p><a className="email-link" href="mailto:contact@valismesh.com">contact@valismesh.com <span>↗</span></a></section>
       <footer><img src="/brand/ValisMesh-Full-Lockup-Outlined.svg" alt="ValisMesh — AI workforce. Business execution. Governed." /><p>© 2026 ValisMesh LLC. All rights reserved.</p><p>Georgia, United States</p></footer>
     </main>
   );
