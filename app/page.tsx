@@ -50,12 +50,36 @@ export default function Home() {
 
       <section className="section process-section" id="how">
         <div className="section-heading"><p className="section-label">How it works</p><h2>From business need to governed result.</h2><p>The platform is designed to give operational work structure, continuity, and visible control from beginning to end.</p></div>
-        <div className="process-list">{process.map(([n,title,text]) => <article className="process-card" key={n}><span>{n}</span><div><h3>{title}</h3><p>{text}</p></div></article>)}</div>
+        <div className="mission-pipeline" aria-label="ValisMesh governed mission workflow">
+          <article className="pipeline-stage pipeline-stage-compact">
+            <span>{process[0][0]}</span><div><small>Input</small><h3>{process[0][1]}</h3><p>{process[0][2]}</p></div>
+          </article>
+          <div className="pipeline-connector" aria-hidden="true"><span /></div>
+          <article className="pipeline-stage pipeline-stage-compact">
+            <span>{process[1][0]}</span><div><small>Mission</small><h3>{process[1][1]}</h3><p>{process[1][2]}</p></div>
+          </article>
+          <div className="pipeline-connector pipeline-connector-split" aria-hidden="true"><span /></div>
+          <article className="pipeline-stage pipeline-orchestration">
+            <span>{process[2][0]}</span>
+            <div className="pipeline-stage-copy"><small>AI workforce</small><h3>{process[2][1]}</h3><p>{process[2][2]}</p></div>
+            <div className="pipeline-workers" aria-label="Coordinated example workers"><div><small>Worker 01</small><strong>Operations</strong></div><div><small>Worker 02</small><strong>Finance</strong></div><div><small>Worker 03</small><strong>Support</strong></div></div>
+          </article>
+          <div className="pipeline-connector" aria-hidden="true"><span /></div>
+          <article className="pipeline-stage pipeline-governance">
+            <span>{process[3][0]}</span>
+            <div className="pipeline-stage-copy"><small>Control checkpoint</small><h3>{process[3][1]}</h3><p>{process[3][2]}</p></div>
+            <div className="checkpoint-indicators" aria-label="Governance controls"><span>Permissions</span><span>Human approval</span><span>Auditability</span></div>
+          </article>
+          <div className="pipeline-connector" aria-hidden="true"><span /></div>
+          <article className="pipeline-stage pipeline-stage-compact pipeline-result">
+            <span>{process[4][0]}</span><div><small>Outcome</small><h3>{process[4][1]}</h3><p>{process[4][2]}</p></div>
+          </article>
+        </div>
       </section>
 
       <section className="section workforce" id="workforce">
         <div className="workforce-copy"><p className="section-label">AI workforce</p><h2>Specialized workers. Coordinated as a team.</h2><p>Instead of relying on one general-purpose assistant, ValisMesh centers on specialized AI workers that can take on distinct roles, share mission context, and collaborate toward a defined operational outcome.</p><p>Capabilities will be verified as development progresses. The goal is practical support for recurring business operations—not novelty automation.</p></div>
-        <div className="workforce-diagram" aria-label="Illustrative mission coordinated across specialized AI workers"><div className="mission-node"><small>Mission</small><strong>Defined outcome</strong></div><div className="worker-row"><div><small>Worker 01</small><strong>Operations Worker</strong><p>Process coordination</p></div><div><small>Worker 02</small><strong>Finance Worker</strong><p>Financial operations</p></div><div><small>Worker 03</small><strong>Support Worker</strong><p>Customer operations</p></div></div><div className="oversight-bar"><span>Governance layer</span><span>Human oversight</span></div></div>
+        <div className="workforce-diagram" aria-label="Illustrative mission coordinated by Atlas across specialized AI workers"><div className="mission-node"><small>Mission</small><strong>Defined outcome</strong></div><div className="atlas-node"><small>Atlas</small><strong>Mission coordination</strong></div><div className="worker-row"><div><small>Worker 01</small><strong>Operations Worker</strong><p>Process coordination</p></div><div><small>Worker 02</small><strong>Finance Worker</strong><p>Financial operations</p></div><div><small>Worker 03</small><strong>Support Worker</strong><p>Customer operations</p></div></div><div className="oversight-bar"><span>Governance layer</span><span>Human oversight</span></div></div>
       </section>
 
       <section className="section operations-section">
