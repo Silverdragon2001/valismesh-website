@@ -15,6 +15,12 @@ const governance = [
   ['Accountability', 'Clear ownership and operational context support responsible outcomes.'],
 ];
 
+const businessOperations = [
+  ['Operations', 'Coordinate recurring workflows, monitor work in progress, surface exceptions, and help keep operational tasks moving.'],
+  ['Administrative work', 'Gather information, prepare reports, organize recurring processes, and route work that requires attention.'],
+  ['Customer operations', 'Support defined customer workflows, gather relevant context, prepare work for review, and escalate decisions that require a person.'],
+];
+
 export default function Home() {
   return (
     <main>
@@ -39,7 +45,7 @@ export default function Home() {
 
       <section className="intro section" id="what">
         <p className="section-label">Not simply a chatbot</p>
-        <div><h2>An operational layer for coordinated AI work.</h2><p>ValisMesh is being designed to turn business needs into governed missions, coordinate specialized AI workers, and keep people in control of consequential decisions.</p></div>
+        <div><h2>An operational layer for coordinated AI work.</h2><p>ValisMesh connects business needs to governed missions, coordinates specialized AI workers, and keeps people in control of consequential decisions.</p></div>
       </section>
 
       <section className="section process-section" id="how">
@@ -48,12 +54,18 @@ export default function Home() {
       </section>
 
       <section className="section workforce" id="workforce">
-        <div className="workforce-copy"><p className="section-label">AI workforce</p><h2>Specialized workers. Coordinated as a team.</h2><p>Instead of relying on one general-purpose assistant, ValisMesh is being designed around specialized AI workers that can take on distinct roles, share mission context, and collaborate toward a defined operational outcome.</p><p>Capabilities will be introduced and verified as development progresses. The goal is practical support for recurring business operations—not novelty automation.</p></div>
-        <div className="workforce-diagram" aria-label="A mission coordinated across specialized AI workers"><div className="mission-node"><small>Mission</small><strong>Defined outcome</strong></div><div className="worker-row"><div><small>Worker 01</small><strong>Specialized role</strong></div><div><small>Worker 02</small><strong>Specialized role</strong></div><div><small>Worker 03</small><strong>Specialized role</strong></div></div><div className="oversight-bar"><span>Governance layer</span><span>Human oversight</span></div></div>
+        <div className="workforce-copy"><p className="section-label">AI workforce</p><h2>Specialized workers. Coordinated as a team.</h2><p>Instead of relying on one general-purpose assistant, ValisMesh centers on specialized AI workers that can take on distinct roles, share mission context, and collaborate toward a defined operational outcome.</p><p>Capabilities will be verified as development progresses. The goal is practical support for recurring business operations—not novelty automation.</p></div>
+        <div className="workforce-diagram" aria-label="Illustrative mission coordinated across specialized AI workers"><div className="mission-node"><small>Mission</small><strong>Defined outcome</strong></div><div className="worker-row"><div><small>Worker 01</small><strong>Operations Worker</strong><p>Process coordination</p></div><div><small>Worker 02</small><strong>Finance Worker</strong><p>Financial operations</p></div><div><small>Worker 03</small><strong>Support Worker</strong><p>Customer operations</p></div></div><div className="oversight-bar"><span>Governance layer</span><span>Human oversight</span></div></div>
+      </section>
+
+      <section className="section operations-section">
+        <div className="section-heading"><p className="section-label">Built for real operations</p><h2>AI workers for the work businesses already do.</h2><p>ValisMesh is being designed to support practical operational workflows by coordinating specialized AI workers within defined permissions, human oversight, and business rules.</p></div>
+        <div className="governance-grid operations-grid">{businessOperations.map(([title,text],i) => <article key={title}><span>0{i+1}</span><h3>{title}</h3><p>{text}</p></article>)}</div>
+        <p className="operations-note">These are examples of the kinds of operational workflows ValisMesh is being designed to support. ValisMesh connects specialized roles into governed AI teams rather than relying on one general-purpose assistant.</p>
       </section>
 
       <section className="section governance" id="governance">
-        <div className="section-heading"><p className="section-label">Governance by design</p><h2>Useful autonomy requires clear control.</h2><p>ValisMesh is being built around the idea that operational AI should be understandable, bounded, and accountable to the people and businesses it serves.</p></div>
+        <div className="section-heading"><p className="section-label">Governance by design</p><h2>Useful autonomy requires clear control.</h2><p>ValisMesh follows the principle that operational AI should be understandable, bounded, and accountable to the people and businesses it serves.</p></div>
         <div className="governance-grid">{governance.map(([title,text],i) => <article key={title}><span>0{i+1}</span><h3>{title}</h3><p>{text}</p></article>)}</div>
       </section>
 
