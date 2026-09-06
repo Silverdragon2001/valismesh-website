@@ -21,6 +21,12 @@ const businessOperations = [
   ['Customer operations', 'Support defined customer workflows, gather relevant context, prepare work for review, and escalate decisions that require a person.'],
 ];
 
+const deploymentOptions = [
+  ['Cloud', 'Primary', 'ValisMesh securely connects to approved cloud tools your business already uses. This is the primary deployment model for early customers.'],
+  ['Hybrid', 'Planned', 'For businesses with local or private systems, ValisMesh can combine cloud management with a protected customer-hosted connection.'],
+  ['Private Deployment', 'Future option', 'Dedicated deployment options may be evaluated for organizations with stronger infrastructure, privacy, or compliance requirements.'],
+];
+
 export default function Home() {
   return (
     <main>
@@ -96,6 +102,12 @@ export default function Home() {
       <section className="section business">
         <p className="section-label">Built for business</p>
         <div><h2>Practical operations for growing teams.</h2><p>ValisMesh is initially focused on the needs of small-to-midsized businesses—especially organizations in Statesboro, Savannah, and across the lower Southeast. The platform is intended to work alongside the business systems and human teams companies already rely on.</p><div className="region-tags"><span>Small & midsized businesses</span><span>Operational teams</span><span>Lower Southeast</span></div></div>
+      </section>
+
+      <section className="section environment-section">
+        <div className="section-heading"><p className="section-label">Deployment options</p><h2>Built for Your Environment</h2><p>ValisMesh is designed to work with the systems your business already uses, while keeping access governed, limited, and auditable.</p></div>
+        <div className="deployment-grid">{deploymentOptions.map(([title,status,text],i) => <article className={i === 0 ? 'deployment-card deployment-card-primary' : 'deployment-card'} key={title}><div className="deployment-card-heading"><h3>{title}</h3><span>{status}</span></div><p>{text}</p></article>)}</div>
+        <p className="deployment-security">ValisMesh uses approved, least-privilege connections. Customer business information remains separated from ValisMesh system diagnostics and support access.</p>
       </section>
 
       <section className="section about" id="about">
