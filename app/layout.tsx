@@ -6,22 +6,25 @@ export const metadata: Metadata = {
   title: 'ValisMesh | Governed AI Workforces',
   description: 'ValisMesh is developing a governed multi-agent AI workforce platform for real business operations.',
   icons: {
-    icon: [{ url: '/brand/approved-valismesh-v.png', type: 'image/png' }],
-    apple: [{ url: '/brand/approved-valismesh-v.png', type: 'image/png' }],
+    icon: [
+      { url: '/icons/ValisMesh-Icon-32.png', type: 'image/png', sizes: '32x32' },
+      { url: '/icons/ValisMesh-Icon-192.png', type: 'image/png', sizes: '192x192' },
+    ],
+    apple: [{ url: '/icons/ValisMesh-Icon-192.png', type: 'image/png', sizes: '192x192' }],
   },
   openGraph: {
     title: 'ValisMesh | Governed AI Workforces',
     description: 'A governed multi-agent AI workforce platform for real business operations.',
     url: 'https://valismesh.com',
     siteName: 'ValisMesh',
-    images: [{ url: '/brand/approved-valismesh-full-lockup.png', width: 2115, height: 744, alt: 'ValisMesh — AI workforce. Business execution. Governed.' }],
+    images: [{ url: '/og.png', width: 1536, height: 1024, alt: 'ValisMesh — AI workforce. Business execution. Governed.' }],
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'ValisMesh | Governed AI Workforces',
     description: 'A governed multi-agent AI workforce platform for real business operations.',
-    images: ['/brand/approved-valismesh-full-lockup.png'],
+    images: ['/og.png'],
   },
 };
 
